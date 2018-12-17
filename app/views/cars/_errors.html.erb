@@ -1,0 +1,8 @@
+<% if @car.errors.any? %>
+    <h3>The Following Errors Prevented this car from being saved</h3>
+    <ul>
+        <% @car.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% end %>
