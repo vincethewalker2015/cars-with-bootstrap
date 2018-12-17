@@ -12,14 +12,26 @@
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
-        <div class="container">
-            <% flash.each do |name, msg| %>
-            <ul>
-                <li><%= msg %></li>
-            </ul>
-          <% end %>
-        <%= yield %>
-        </div>
+      <header>
+        <%= render 'layouts/navbar' %>
+          <div class="container">
+              <% flash.each do |name, msg| %>
+                <ul>
+                    <li><%= msg %></li>
+                </ul>
+              <% end %>
+          </div>    
+      </header>
+      
+        <main>
+          <div class="container">  
+            <%= yield %>
+          </div>
+        </main>
+        
+        <footer class="page-footer"  id="barcol">
+          <%= render 'layouts/footer' %>
+        </footer>
+        
   </body>
 </html>

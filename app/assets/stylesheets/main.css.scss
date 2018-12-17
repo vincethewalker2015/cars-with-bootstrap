@@ -3,3 +3,19 @@
 .brand-logo {
     padding-left: 20px!important;
 }
+
+#barcol {
+    background-color: green; 
+}
+
+/* FOOTER SECTION */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
