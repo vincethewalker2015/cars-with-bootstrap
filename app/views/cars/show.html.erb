@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 align="center">Car</h2>
+    <h2 align="center">Car <%= @car.make %> <%= @car.name %></h2>
 </div>
 
 <div class="container">
@@ -18,6 +18,10 @@
         </p>
         <p>
             Picture: <%= @car.picture %>
+        </p>
+        <p>
+            <%= link_to "Edit", edit_car_path(@car), class: "btn waves-effect waves-light btn-edit" %>
+            <%= link_to "Cars", cars_path, class: "btn waves-effect waves-light btn-index" %>
         </p>
     </div>
     

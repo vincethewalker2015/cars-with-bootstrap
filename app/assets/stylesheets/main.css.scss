@@ -48,6 +48,30 @@
     text-align: center;
 }
 
+
+/* INDEX SECTION */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CAR SHOWPAGE */
+
+.btn-edit {
+    background: green;
+}
+.btn-index {
+    background: #FF8C00;
+}
+.btn-edit:hover {
+    background: #32CD32;
+}
+
+.btn-index:hover {
+    background: #FFA500;
+}
+
 /* FOOTER SECTION */
 
 body {
