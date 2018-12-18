@@ -1,2 +1,24 @@
-<h2 align="center">Car List</h2>
-<%= render 'layouts/flash' %>
+<div class="container">
+    <h2 align="center">Car list</h2>
+</div>
+<div class="container">
+    <div align="center">
+        <%= render 'layouts/flash' %> 
+        <table>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <% @cars.each do |car| %>
+                <tr>
+                    <td><%= car.make %></td>
+                    <td><%= car.name %></td>
+                    <td><%= car.price %></td>
+                    <td><%= car.description %></td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+</div>
