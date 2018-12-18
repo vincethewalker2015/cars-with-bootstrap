@@ -8,6 +8,32 @@
     background-color: green; 
 }
 
+/* NAV SECTION */
+
+.tabs {
+   background-color: green;
+   
+}
+
+.tabs .tab a {
+    background-color: green; 
+    color: white;
+    font-weight: bold;
+    
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #fff;
+    will-change: left, right;
+}
+
+.indicator {
+    align-content: right;
+}
+
 /* FOOTER SECTION */
 
 body {
