@@ -17,7 +17,7 @@
             Price: £<%= @car.price %>
         </p>
         <p>
-            Picture: <%= @car.picture %>
+             <%= image_tag @car.picture.url, class: "photo" if @car.picture? %>
         </p>
         <p>
             <%= link_to "Edit", edit_car_path(@car), class: "btn waves-effect waves-light btn-edit" %>
