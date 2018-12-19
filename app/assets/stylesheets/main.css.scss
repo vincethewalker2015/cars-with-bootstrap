@@ -62,17 +62,23 @@ a {
 
 .btn-edit {
     background: green;
+    color: #fff;
 }
 .btn-index {
     background: #FF8C00;
 }
 .btn-edit:hover {
     background: #32CD32;
+    color: #fff;
 }
 
 .btn-index:hover {
     background: #FFA500;
 }
+#white {
+    color: #fff;
+}
+
 //Image
 .photo {
     border: 2px solid black;
@@ -91,3 +97,19 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+/* ALERTS */
+
+.ul, .menu, .dir {
+    background: green;
+}
+
+.flashAlertMain {
+    background: #f2dede;
+    color: #a94442;
+}
+
+.card-panel {
+    background: teal lighten-2;
+   
+}
