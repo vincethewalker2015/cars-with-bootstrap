@@ -1,5 +1,7 @@
 <div class="container">
-    <h2 align="center">Car list</h2>
+    <div class="head-badge">
+        <h2 align="center">Car list</h2>
+    </div>
 </div>
 <div class="container">
     <div align="center">
@@ -19,6 +21,7 @@
                     <td><%=link_to car.name, car_path(car), class: "link" %></td>
                     <td><%= car.price %></td>
                     <td><%= car.description %></td>
+                    <td><%= link_to "View", car_path(car), class: "btn waves-effect waves-light btn-edit" %></td>
                 </tr>
             <% end %>
         </table>

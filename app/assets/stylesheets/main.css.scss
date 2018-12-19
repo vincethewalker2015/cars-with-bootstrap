@@ -1,18 +1,32 @@
 @import 'materialize';
-@import "font-awesome";
 
 .brand-logo {
     padding-left: 20px!important;
 }
 
 #barcol {
-    background-color: green; 
+    background-color: #006400; 
+}
+
+/* GENERAL */
+
+.head-badge {
+    background: #006400;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.home-banner {
+    background: #006400;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 60px;
 }
 
 /* NAV SECTION */
 
 .tabs {
-   background-color: green;
+   background-color: #006400;
    
 }
 
@@ -23,7 +37,7 @@
 }
 
 .tabs .tab a {
-    background-color: green; 
+    background-color: #006400; 
     color: white;
     font-weight: bold;
     
@@ -41,20 +55,9 @@
     align-content: right;
 }
 
-/* iPhone 6 in portrait & landscape */
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
-   .banner a {
-    visibility: hidden !important;
+.banner-text {
+    margin-left: 10px;
 }
-}
-
-/*
-nav .brand-logo {
-    position: absolute
-} */
-
 
 
 /* FORM SECTION */
@@ -82,22 +85,40 @@ a {
 // Buttons
 
 .btn-edit {
-    background: green;
+    background: #006400;
     color: #fff;
-}
-.btn-index {
-    background: #FF8C00;
 }
 .btn-edit:hover {
     background: #32CD32;
     color: #fff;
 }
 
+.btn-index {
+    background: #FF8C00;
+}
 .btn-index:hover {
     background: #FFA500;
 }
+.btn-delete {
+    background: #FF0000;
+    color: #fff;
+}
+.btn-delete:hover {
+    background: #ff9999;
+    color: #fff;
+    
+}
+
 #white {
     color: #fff;
+}
+
+//Banner
+.car-detail{
+    background: #006400;
+    color: #fff;
+    //font-weight: bold;
+    border-radius: 5px;
 }
 
 //Image
@@ -106,6 +127,15 @@ a {
     padding: 3px;
     border-radius: 5px;
 }
+
+ @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) {
+     .banner {
+    visibility: none }
+} 
+    
+  
 
 /* FOOTER SECTION */
 
@@ -122,7 +152,7 @@ body {
 /* ALERTS */
 
 .ul, .menu, .dir {
-    background: green;
+    background: #006400;
 }
 
 .flashAlertMain {

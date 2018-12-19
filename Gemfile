@@ -12,7 +12,6 @@ gem 'sass-rails', '~> 5.0'
 # Use MATERILIZE for css styling
 gem 'materialize-sass', '1.0.0'
 gem 'material_icons'
-gem "font-awesome-rails"
 # Use JQuery for Javascript functionality
 gem 'jquery-rails', '4.3'
 # Use Uglifier as compressor for JavaScript assets
