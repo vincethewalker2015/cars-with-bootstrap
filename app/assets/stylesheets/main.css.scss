@@ -41,6 +41,22 @@
     align-content: right;
 }
 
+/* iPhone 6 in portrait & landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+   .banner a {
+    visibility: hidden !important;
+}
+}
+
+/*
+nav .brand-logo {
+    position: absolute
+} */
+
+
+
 /* FORM SECTION */
 
 .form {
