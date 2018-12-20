@@ -9,6 +9,9 @@ gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use Bootstrap for CSS Styling
+gem 'bootstrap-sass', '3.3.7'
+gem 'sass-rails', '~> 5.0'
 
 # Use JQuery for Javascript functionality
 gem 'jquery-rails', '4.3'
