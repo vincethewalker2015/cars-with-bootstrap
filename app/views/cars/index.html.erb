@@ -18,10 +18,10 @@
                 <tr>
                     <td><%= car.make %></td>
                     <td class="IndexImage"><%= image_tag car.picture.url(:thumb) if car.picture? %></td>
-                    <td><%=link_to car.name, car_path(car), class: "link" %></td>
+                    <td><%=link_to car.name, car_path(car) %></td>
                     <td><%= car.price %></td>
                     <td><%= car.description %></td>
-                    <td><%= link_to "View", car_path(car), class: "btn waves-effect waves-light btn-edit" %></td>
+                    <td><%= link_to "View", car_path(car) %></td>
                 </tr>
             <% end %>
         </table>

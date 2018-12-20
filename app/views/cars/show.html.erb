@@ -1,12 +1,12 @@
 <div class="container">
-    <div class="card-panel head-badge">
+    <div class="">
         <h2 align="center"> <%= @car.make %> <%= @car.name %></h2>
     </div>
 </div>
 
 <div class="container">
         <div align="center">
-        <div class="card-panel car-detail">
+        <div class="">
         <p>
             Make: <%= @car.make %> 
         </p>
@@ -21,13 +21,13 @@
         </p>
         </div>
         <p>
-             <%= image_tag @car.picture.url, class: "responsive-img photo" if @car.picture? %>
+             <%= image_tag @car.picture.url if @car.picture? %>
         </p>
     
         <p>
-            <%= link_to "Edit", edit_car_path(@car), class: "btn waves-effect waves-light btn-edit" %>
-            <%= link_to "Cars", cars_path, class: "btn waves-effect waves-light btn-index" %>
-            <%= link_to "Delete", car_path(@car), method: :delete, class: "btn waves-effect waves-light btn-delete" %>
+            <%= link_to "Edit", edit_car_path(@car) %>
+            <%= link_to "Cars", cars_path %>
+            <%= link_to "Delete", car_path(@car) %>
         </p>
     </div>
     
