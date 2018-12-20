@@ -1,2 +1,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.white{
+    color: #fff !important;
+}
+
+.page-alignment {
+    margin-top: 80px;
+}
+
+#page-footer {
+    margin-top: 300px !important;
+}
+
+
+/* NAVBAR */
+
+.hide {
+    visibility: hidden;
+}
+
+ .make a {
+    text-decoration: none !important;
+}
+

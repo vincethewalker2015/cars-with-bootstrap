@@ -27,11 +27,13 @@
       
         <main>
           <div class="container">  
-            <%= yield %>
+           <div class="page-alignment">
+              <%= yield %>
+           </div>
           </div>
         </main>
         
-        <footer class="page-footer"  id="barcol">
+        <footer class="navbar navbar-fixed-top navbar-default"  id="page-footer">
           <%= render 'layouts/footer' %>
         </footer>
         

@@ -1,18 +1,28 @@
-<nav>
-    <div class="nav-wrapper col" id= "barcol">
-      <a href="#!" class="brand-logo"><i class="large material-icons"><span class="banner">drive_eta</span>
-        </i><%= link_to "Car Bar", root_path, class: "banner-text" %></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li class=""><%= link_to "Home", root_path %></li>
-        <li class=""><%= link_to "All Cars", cars_path %></li>
-        <li class=""><%= link_to "Add a New Car", new_car_path %></li>
-      </ul>
-      <ul class="sidenav" id="mobile-demo">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Cars", cars_path %></li>
-        <li><%= link_to "Add a New Car", new_car_path %></li>
-      </ul>
-    </div>
-  </nav>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%=link_to "Home", root_path %></li>
+          <li><%= link_to "All Cars", cars_path %></li>
+          <li><%= link_to "Add a New Car", new_car_path %></li>
+        </ul>
+        
+         <ul class="nav navbar-nav navbar-left">
+            <li><a class="" href="#!"><span class="white"><i class="fas fa-car"></i></span></a></li>
+            <li><%= link_to "Car Bar", root_path %></li>
+         </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
   

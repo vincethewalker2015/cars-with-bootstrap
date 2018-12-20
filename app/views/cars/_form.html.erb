@@ -1,35 +1,66 @@
-<div class="">
-    <%= form_for @car do |f| %>
-    <p>
-        <%= f.label :make %> <br />
-        <%= f.text_field :make, class: "" %>
-    </p>
-    
-    <p>
-        <%= f.label :model %> <br />
-        <%= f.text_field :name, class: "" %>
-    </p>
-    
-    <p>
-        <%= f.label :price %> <br />
-        <%= f.text_field :price, class: "" %>
-    </p>
-    
-    <p>
-        <%= f.label :description %> <br />
-        <%= f.text_area :description, class: "" %>
-    </p>
-    
-    <p>
-        <%= f.label :picture %> <br />
-        <%= f.file_field :picture, class: "" %>
-    </p>
-    
-    <p>
-        <%= f.submit  %>
-    </p>
-
-<% end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well">
+                <%= form_for(@car, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+          
+               <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :make %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :make, class: 'form-control', placeholder: "Make of car", autofocus: true %>
+                 </div>
+               </div>
+               
+                <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :model %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :name, class: 'form-control', placeholder: "Model", autofocus: true %>
+                 </div>
+               </div>
+               
+                <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :price %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :price, class: 'form-control', placeholder: "Price of car", autofocus: true %>
+                 </div>
+               </div>
+              
+              <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :description %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add todo description" %>
+                 </div>
+               </div>
+               
+               <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :picture %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.file_field :picture, class: 'form-control', placeholder: "Add car image here" %>
+                 </div>
+               </div>
+              
+              
+              
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                  <%= f.submit class: "btn btn-primary" %> 
+                  <%= link_to "Back to Index", cars_path, class: "btn btn-warning" %>
+                </div>
+              </div>
+            <% end %>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript">
