@@ -36,7 +36,7 @@
                     <%= f.label :description %> 
                  </div>
                  <div class="col-md-8">
-                   <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add todo description" %>
+                   <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add description of car" %>
                  </div>
                </div>
                
@@ -54,7 +54,7 @@
               <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
                   <%= f.submit class: "btn btn-primary" %> 
-                  <%= link_to "Back to Index", cars_path, class: "btn btn-warning" %>
+                  <%= link_to "Back to AllCars", cars_path, class: "btn btn-warning" %>
                 </div>
               </div>
             <% end %>

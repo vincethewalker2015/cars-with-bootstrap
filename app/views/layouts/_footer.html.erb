@@ -2,7 +2,8 @@
             <div class="row">
               <div class="col-md-12">
                 <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
+<!-- <div class="footer navbar-fixed-bottom"> -->
+<!-- <footer class="footer navbar-fixed-bottom font-small cyan darken-3"> -->
 
     <!-- Footer Elements -->
     <div class="container">
@@ -11,27 +12,20 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-md-12 py-5">
+      
+          <div class="col-md-12 py-5">
           <div class="mb-5 flex-center">
 
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic">
-              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Pinterest-->
-            <a class="pin-ic">
-              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
-            </a>
+           
+            <div class="footer-copyright text-center py-3">
+                <%= render "layouts/footerSocialMedia" %>
+                <br />
+                <span>Created By Vincent Walker</span>
+                <%= link_to "Car Bar", root_path, class: "pull-right copyright" %>
+           </div>
           </div>
         </div>
+        
         <!-- Grid column -->
 
       </div>
@@ -40,12 +34,13 @@
     </div>
     <!-- Footer Elements -->
 
-    <!-- Copyright -->
+    <!-- Copyright 
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="https://vincethewalker.com/"> Vincent Walker</a>
-       <a class="" href="#!"><%= link_to "Car Bar", root_path, class: "pull-right" %></a>
+       <a class="" href="#!"><%#= link_to "Car Bar", root_path, class: "pull-right" %></a>
     </div>
-    <!-- Copyright -->
+    Copyright -->
 
-  </footer>
+  <!--</footer> -->
+  
  

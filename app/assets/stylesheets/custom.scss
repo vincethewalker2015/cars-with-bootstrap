@@ -6,11 +6,21 @@
 }
 
 .page-alignment {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 #page-footer {
     margin-top: 300px !important;
+}
+
+.page-title {
+    color:  #006400;
+}
+
+/* HOME PAGE */
+.head-banner {
+    
+    background: #006400 ;
 }
 
 
@@ -20,7 +30,44 @@
     visibility: hidden;
 }
 
- .make a {
-    text-decoration: none !important;
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
 }
+
+.navbar-inverse {
+    color: #fff;
+    background: #006400;
+}
+
+.navbar-inverse .fa{
+    color: #fff;
+}
+.fa {
+    margin-top: 5px;
+}
+
+/* INDEX PAGE */
+
+img {
+    border: .5px solid black;
+    border-radius: 3px;
+    padding: .5px;
+}
+
+/* SHOW PAGE */
+.show-block {
+    margin-bottom: 300px !important;
+}
+
+    
+
+/* FOOTER */
+
+.copyright {
+    text-decoration: none !important;
+    color: #fff ;
+}
+
+
+
 

@@ -1,6 +1,6 @@
 <div class="container">
-    <div class="head-badge">
-        <h2 align="center">CarBar list</h2>
+    <div align="center">
+        <h2 class="page-title">CarBar list</h2>
     </div>
 </div>
 <div class="container">
@@ -19,14 +19,14 @@
             </tr>
            </thead>
             <% @cars.each do |car| %>
-                <tr>
+                <tr class="well">
                     <th scope="row">
-                        <td><%= car.make %></td>
-                        <td class="IndexImage"><%= image_tag car.picture.url(:thumb) if car.picture? %></td>
-                        <td><%=link_to car.name, car_path(car), class: "make" %></td>
-                        <td>£ <%= car.price %></td>
-                        <td><%= car.description %></td>
-                        <td><%= link_to "View", car_path(car), class: "btn btn-primary" %></td>
+                            <td><%= car.make %></td>
+                            <td><%= image_tag car.picture.url(:thumb) if car.picture? %></td>
+                            <td><%=link_to car.name, car_path(car), class: "make" %></td>
+                            <td>£ <%= car.price %></td>
+                            <td><%= car.description %></td>
+                            <td><%= link_to "View", car_path(car), class: "btn btn-primary" %></td>
                     </th>
                 </tr>
             <% end %>
