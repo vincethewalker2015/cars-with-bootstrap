@@ -5,25 +5,37 @@
 </div>
 <div class="container">
    <div class="row">
-        <div align="center">
+        <div align="center">                 
         <%= render 'layouts/flash' %>
-            
+        <table class="table">
+           <thead>
+                <tr>
+                <th scope="col"><span class="hide">Money</span></th>
+                <th scope="col">Make</th>
+                <th scope="col">Image</th>
+                <th scope="col">Model</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+            </tr>
+           </thead>
             <% @cars.each do |car| %>
-                
-                    <div class="well col-xs-6 col-md-3 center list">
-                    
-                            <td>
-                                <span class="carDetail show-text"><%= car.make %><br /></span>
-                                <span class="carDetail"><%=link_to car.name, car_path(car), class: "make" %><br /></span>
-                                <span class="carDetail"><%= image_tag car.picture.url(:thumb) if car.picture? %></td><br /></span>
-                                <td><span class="carDetail"><td> £ <%= car.price %><br /></span>
-                                <span class="carDetail"><%= car.description %></td><br /></span>
+                <tr class="well well-green">
+                    <th scope="row car-block">
+                            <td class="show-text"><%= car.make %></td>
+                            <td ><%= image_tag car.picture.url(:thumb), id: "resizer" if car.picture? %></td>
+                            <td><%=link_to car.name, car_path(car), class: "make" %></td>
+                            <td>£ <%= car.price %></td>
+                            <td><%= car.description %></td>
                             <td><%= link_to "View", car_path(car), class: "btn btn-primary index-button" %></td>
-                    
-                </div>
+                    </th>
+                </tr>
                 
             <% end %>
             
+          
+        </table>
     </div>
+     
    </div>
+    
 </div>

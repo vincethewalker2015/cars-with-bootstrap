@@ -17,6 +17,10 @@
     color:  #006400;
 }
 
+.btn {
+    border: 2px solid white;
+}
+
 /* HOME PAGE */
 .head-banner {
     
@@ -46,24 +50,53 @@
     margin-top: 5px;
 }
 
+/* FORM */
+
+.form-control {
+    border: 2px solid white !important;
+}
+
 /* INDEX PAGE */
 
 img {
-    border: .5px solid black;
+    border: .5px solid white;
     border-radius: 3px;
     padding: .5px;
 }
 
 .index-button {
     background: #006400;
+    border: 2px solid white;
+}
+
+.index-button:hover {
+    background: #669900;
+    border: 2px solid white;
 }
 
 .list {
-    margin-left: 70px;
+    margin-left: 10px;
 }
 
 .carDetail {
-    padding: 2px;
+    padding: 5px;
+}
+
+.make {
+    color: white;
+}
+.make:hover{
+    text-decoration: none;
+}
+.well-green {
+    background: #006400;
+    color: white;
+    
+}
+
+.car-block {
+    border: 5px solid black;
+    
 }
 
 /* SHOW PAGE */
@@ -84,6 +117,10 @@ img {
 .copyright {
     text-decoration: none !important;
     color: #fff ;
+}
+
+.fa {
+    font-size: 18px;
 }
 
 
