@@ -88,10 +88,16 @@ img {
 .make:hover{
     text-decoration: none;
 }
+// (Green block)
 .well-green {
     background: #006400;
-    color: white;
-    
+    color: #fff;
+}
+
+// (White Block)
+.well-white {
+    background: #fff;
+    color: #006400;
 }
 
 .car-block {

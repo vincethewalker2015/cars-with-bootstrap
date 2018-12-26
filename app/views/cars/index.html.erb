@@ -19,7 +19,7 @@
             </tr>
            </thead>
             <% @cars.each do |car| %>
-                <tr class="well well-green">
+                <tr class="well well-green <%= cycle('', 'well-white') %>"
                     <th scope="row car-block">
                             <td class="show-text"><%= car.make %></td>
                             <td ><%= image_tag car.picture.url(:thumb), id: "resizer" if car.picture? %></td>
@@ -29,7 +29,6 @@
                             <td><%= link_to "View", car_path(car), class: "btn btn-primary index-button" %></td>
                     </th>
                 </tr>
-                
             <% end %>
             
           
