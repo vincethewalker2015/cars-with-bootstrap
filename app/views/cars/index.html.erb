@@ -22,7 +22,7 @@
                 <tr class="well well-green <%= cycle('', 'well-white') %>"
                     <th scope="row car-block">
                             <td class="show-text"><%= car.make %></td>
-                            <td ><%= image_tag car.picture_url(width: "50px"), class: "pic" if car.picture? %></td>
+                            <td ><%= image_tag(car.picture_url, :size => "50px", class: "pic") if car.picture? %></td>
                             <td><%=link_to car.name, car_path(car), class: "make" %></td>
                             <td>£ <%= car.price %></td>
                             <td><%= car.description %></td>
