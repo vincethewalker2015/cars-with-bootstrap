@@ -10,7 +10,7 @@
         <table class="table">
            <thead>
                 <tr>
-                <th scope="col"><span class="hide">Money</span></th>
+                <!-- <th scope="col"><span class="hide">Money</span></th> -->
                 <th scope="col">Make</th>
                 <th scope="col">Image</th>
                 <th scope="col">Model</th>
@@ -22,7 +22,7 @@
                 <tr class="well well-green <%= cycle('', 'well-white') %>"
                     <th scope="row car-block">
                             <td class="show-text"><%= car.make %></td>
-                            <td ><%= image_tag car.picture.url(:thumb), id: "resizer" if car.picture? %></td>
+                            <td ><%= image_tag car.picture_url(width: "50px"), class: "pic" if car.picture? %></td>
                             <td><%=link_to car.name, car_path(car), class: "make" %></td>
                             <td>£ <%= car.price %></td>
                             <td><%= car.description %></td>
