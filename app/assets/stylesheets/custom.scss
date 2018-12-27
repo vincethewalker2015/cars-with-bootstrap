@@ -102,6 +102,13 @@ img {
 .well-white {
     background: #fff;
     color: #006400;
+    img {
+        border: 1px solid  #006400;
+        padding: 1px;
+    }
+    .make {
+        color: #006400 ;
+    }
 }
 
 .car-block {
@@ -118,6 +125,10 @@ img {
 
 .show-text {
     font-weight: bold;
+}
+.mainPic {
+    border: 1px solid #006400;
+    padding: 1px;
 }
 
     

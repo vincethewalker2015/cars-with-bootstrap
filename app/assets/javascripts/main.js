@@ -1,6 +1,6 @@
 $(document).ready(function(){
 			var $this = $(this);
-			$('.pic').click(function(){
+			$('.pic').bind("click touchstart", function(){
 				$(this).css("cursor", "pointer");
 				$(this).animate({width: "300px"}, '3s');
 			});
@@ -8,3 +8,10 @@ $(document).ready(function(){
 				$(this).animate({width: "50px"}, 'slow');
 			});
 		});
+		
+		
+		
+		
+		
+		
+		//mouseleave
