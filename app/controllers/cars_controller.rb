@@ -11,7 +11,7 @@ class CarsController < ApplicationController
     def create
     @car = Car.new(car_params)
     if @car.save
-        flash[:notice] = "Car sucessfully created"
+        flash[:success] = "Car sucessfully created"
         redirect_to car_path(@car)
     else
         render 'new'
@@ -29,7 +29,7 @@ class CarsController < ApplicationController
     def update
        @car = Car.find(params[:id])
        if @car.update(car_params)
-           flash[:notice] = "Car Details sucessfully updated"
+           flash[:success] = "Car Details sucessfully updated"
            redirect_to car_path(@car)
        else
            render 'edit'
@@ -39,7 +39,8 @@ class CarsController < ApplicationController
     def destroy
        @car = Car.find(params[:id])
        @car.destroy
-       flash[:notice] = "Deleted"
+       flash[:danger] = "Deleted"
+       redirect_to cars_path
     end
     
     private
