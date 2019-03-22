@@ -1,0 +1,30 @@
+<% if @car.errors.any? %>
+ <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+   <div class="panel panel-danger">
+    <div class="panel-heading" id="top-alert">
+    <h2 class="panel-title">
+      <%= pluralize(@car.errors.count, "error") %> prohibited this <%= @car.class %> from being saved: <!-- Solution from recipes_test_rb 46 -->
+      <a href="#" class="close" data-dismiss="panel">&#215;</a>
+     </h2>
+      <div class="panel-body">
+       <ul>
+        <% @car.errors.full_messages.each do |msg| %>
+         <li><%= msg %></li>
+      <% end %>
+     </ul>
+    </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<% end %>
+
+
+
+
+
+
+
+
+

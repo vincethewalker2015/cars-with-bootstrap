@@ -1,8 +1,0 @@
-<% if @car.errors.any? %>
-    <h5 class="flashAlertMain">The Following Errors Prevented this car from being saved:</h5>
-    <ul>
-        <% @car.errors.full_messages.each do |msg| %>
-            <li class="flashAlertMain"><%= msg %></li>
-        <% end %>
-    </ul>
-<% end %>
