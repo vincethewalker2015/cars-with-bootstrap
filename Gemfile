@@ -22,7 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 # Carrierwave for Image uploads
 gem 'carrierwave', '1.2.2'
 # Use Mini Magick for Image resizing
-gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'mini_magick', '~> 4.9'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
