@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 # Carrierwave for Image uploads
-gem 'carrierwave', '1.2.2'
+gem 'carrierwave', '1.3.2'
 # Use Mini Magick for Image resizing
 gem 'mini_magick', '~> 4.9'
 # Use CoffeeScript for .coffee assets and views
